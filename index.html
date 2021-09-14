@@ -1,1 +1,80 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="never"><link rel="icon" href="/favicon.ico"><title>AI客服</title><link href="/css/chunk-0aad138e.740e5dbd.css" rel="prefetch"><link href="/css/chunk-0b2359eb.cfacae4d.css" rel="prefetch"><link href="/css/chunk-19c3b192.7d47153d.css" rel="prefetch"><link href="/css/chunk-1fef1e66.dd389ae9.css" rel="prefetch"><link href="/css/chunk-4c1996e4.d822096a.css" rel="prefetch"><link href="/css/chunk-5b114eae.352db3f1.css" rel="prefetch"><link href="/css/chunk-66ec7a12.62d49371.css" rel="prefetch"><link href="/css/chunk-6d142391.cff2a778.css" rel="prefetch"><link href="/css/chunk-7adf5e24.f2933ac6.css" rel="prefetch"><link href="/css/chunk-b7667150.69564617.css" rel="prefetch"><link href="/css/chunk-d3973054.27365873.css" rel="prefetch"><link href="/css/chunk-e472b5d4.588e9f5a.css" rel="prefetch"><link href="/js/chunk-0aad138e.4d38543a.js" rel="prefetch"><link href="/js/chunk-0b2359eb.de15849e.js" rel="prefetch"><link href="/js/chunk-19c3b192.fc344ca6.js" rel="prefetch"><link href="/js/chunk-1fef1e66.e065541c.js" rel="prefetch"><link href="/js/chunk-4c1996e4.7df7eb32.js" rel="prefetch"><link href="/js/chunk-5b114eae.4c11fc72.js" rel="prefetch"><link href="/js/chunk-66ec7a12.394b98c6.js" rel="prefetch"><link href="/js/chunk-6d142391.cb12b2d6.js" rel="prefetch"><link href="/js/chunk-7adf5e24.0c165a9d.js" rel="prefetch"><link href="/js/chunk-b7667150.c9e3754b.js" rel="prefetch"><link href="/js/chunk-d3973054.d33309f5.js" rel="prefetch"><link href="/js/chunk-e472b5d4.46b3f277.js" rel="prefetch"><link href="/css/app.19e4d867.css" rel="preload" as="style"><link href="/css/chunk-vendors.aeef606e.css" rel="preload" as="style"><link href="/js/app.a0b5e406.js" rel="preload" as="script"><link href="/js/chunk-vendors.ac3d2951.js" rel="preload" as="script"><link href="/css/chunk-vendors.aeef606e.css" rel="stylesheet"><link href="/css/app.19e4d867.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but ai-kf doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.ac3d2951.js"></script><script src="/js/app.a0b5e406.js"></script></body></html>
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            body{
+                background: url("bg.jpg") no-repeat;
+                background-size: 100%;
+            }
+            #box{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -300px 0 0 -300px;
+                width: 600px;
+                height: 300px;
+                line-height: 300px;
+                text-align: center;
+                font-size: 3em;
+                text-shadow: 0 0 50px #f00;
+                color: rgba(255,255,255,0.8);
+                background: rgba(255,255,255,0.5);
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(255,255,255,0.5);
+            }
+            h1{
+                text-align: center;
+                color: #eee;
+                letter-spacing: 10px;
+            }
+            #btn{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 200px;
+                height: 50px;
+                font-size: 1.2em;
+                margin: 100px 0 0 -100px;
+                background: aqua;
+                border: aqua;
+                border-radius: 15px;
+                color: white;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>圣诞大狂欢</h1>
+        <div id="box">
+        </div>
+        <button id="btn">抽奖<button>
+        <script>
+            let arr = ["张三","李四","王五","赵六","王二麻子","陈普通","彭鲲"];
+            function extruct(){
+                if(arr.length == 0) {
+                    document.getElementById('box').innerText="抽奖结束";
+                    return;
+                }
+                let index = parseInt(Math.random() * arr.length);
+                let lucker = arr[index];
+                arr.splice(index,1);
+                document.getElementById('box').innerText = lucker;
+            }
+            let start = false;
+            document.getElementById('btn').addEventListener('click',function (){
+                if (start){
+                    clearInterval(flag);
+                    extruct();
+                } else {
+                    flag = setInterval(function (){
+                        document.getElementById('box').innerText = arr[parseInt(Math.random() * arr.length)];
+                    },10)
+                }
+                start = !start;
+            })
+        </script>
+    </body>
+<html>
+
