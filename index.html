@@ -1,80 +1,80 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <style>
-            body{
-                background: url("bg.jpg") no-repeat;
-                background-size: 100%;
-            }
-            #box{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin: -300px 0 0 -300px;
-                width: 600px;
-                height: 300px;
-                line-height: 300px;
-                text-align: center;
-                font-size: 3em;
-                text-shadow: 0 0 50px #f00;
-                color: rgba(255,255,255,0.8);
-                background: rgba(255,255,255,0.5);
-                border-radius: 10px;
-                box-shadow: 0 0 20px rgba(255,255,255,0.5);
-            }
-            h1{
-                text-align: center;
-                color: #eee;
-                letter-spacing: 10px;
-            }
-            #btn{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: 200px;
-                height: 50px;
-                font-size: 1.2em;
-                margin: 100px 0 0 -100px;
-                background: aqua;
-                border: aqua;
-                border-radius: 15px;
-                color: white;
-                outline: none;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>圣诞大狂欢</h1>
-        <div id="box">
-        </div>
-        <button id="btn">抽奖<button>
-        <script>
-            let arr = ["张三","李四","王五","赵六","王二麻子","陈普通","彭鲲"];
-            function extruct(){
-                if(arr.length == 0) {
-                    document.getElementById('box').innerText="抽奖结束";
-                    return;
-                }
-                let index = parseInt(Math.random() * arr.length);
-                let lucker = arr[index];
-                arr.splice(index,1);
-                document.getElementById('box').innerText = lucker;
-            }
-            let start = false;
-            document.getElementById('btn').addEventListener('click',function (){
-                if (start){
-                    clearInterval(flag);
-                    extruct();
-                } else {
-                    flag = setInterval(function (){
-                        document.getElementById('box').innerText = arr[parseInt(Math.random() * arr.length)];
-                    },10)
-                }
-                start = !start;
-            })
-        </script>
-    </body>
-<html>
+<html lang="zh-CN">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>恋爱计时器</title>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-image: url('background.png');
+            font-size: 85%;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 220%;
+            font-weight: 400;
+        }
+        
+        .content {
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            transform: translate(0, -50%);
+            text-align: center;
+        }
+        
+        .timer {
+            font-size: 180%;
+            line-height: 1.5;
+            margin: 1em 0;
+        }
+        
+        .timer b {
+            color: rgb(253, 99, 125);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>宝贝，我们已经热恋了</h2>
+        <div class="timer">
+            <b id="d"></b> 天 <b id="h"></b> 时 <b id="m"></b> 分 <b id="s"></b> 秒
+        </div>
+    </div>
+
+    <script>
+        function timer() {
+            var start = new Date(2021, 6, 12);
+            var t = new Date() - start;
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
+            }
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
+</body>
+
+</html>
