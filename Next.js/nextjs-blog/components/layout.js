@@ -11,37 +11,23 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="./favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta name="description" content="Learn how to build a personal website using Next.js"/>
+        <meta property="og:image" content={`https://og-image.now.sh/${encodeURI( siteTitle )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}/>
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/favicon.ico"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+          <div className={styles.blogTitle}>123</div>
+            {/* <img src="/top.jpg" width="100%" height="100%" className={`${styles.headerHomeImage}`}/> */}
+            {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-                <img
-                  src="/favicon.ico"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
+                <img src="/favicon.ico" className={`${styles.headerImage} ${utilStyles.borderCircle}`} alt={name}/>
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
@@ -52,11 +38,11 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>← 返回首页</a>
           </Link>
         </div>
       )}
