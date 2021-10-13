@@ -18,6 +18,13 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div className={utilStyles.poem_wrap}>
+        <div className={`${utilStyles.poem_border} ${utilStyles.poem_left}`}></div>
+        <div className={`${utilStyles.poem_border } ${utilStyles.poem_right}`}></div>
+        <h1>念两句诗</h1>
+        <div className={utilStyles.poem_sentence}>病夫因病得来游，更值满川微雨洗新秋。</div>
+        <div className={utilStyles.poem_info}>【宋代】陈与义《虞美人·扁舟三日秋塘路》</div>
+      </div>
       <section className={utilStyles.headingMd}>
         <p>这里可以填充个人介绍</p>
         <Link href="/posts/first-post">
@@ -42,7 +49,10 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-      <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"
+      ></script>
     </Layout>
   );
 }
