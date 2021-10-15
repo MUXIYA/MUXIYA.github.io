@@ -19,11 +19,19 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <div className={utilStyles.poem_wrap}>
-        <div className={`${utilStyles.poem_border} ${utilStyles.poem_left}`}></div>
-        <div className={`${utilStyles.poem_border } ${utilStyles.poem_right}`}></div>
+        <div
+          className={`${utilStyles.poem_border} ${utilStyles.poem_left}`}
+        ></div>
+        <div
+          className={`${utilStyles.poem_border} ${utilStyles.poem_right}`}
+        ></div>
         <h1>念两句诗</h1>
-        <div className={utilStyles.poem_sentence}>病夫因病得来游，更值满川微雨洗新秋。</div>
-        <div className={utilStyles.poem_info}>【宋代】陈与义《虞美人·扁舟三日秋塘路》</div>
+        <div className={utilStyles.poem_sentence}>
+           山有木兮木有枝。心悦君兮君不知。
+        </div>
+        <div className={utilStyles.poem_info}>
+          【春秋】《越人歌》
+        </div>
       </div>
       <section className={utilStyles.headingMd}>
         <p>这里可以填充个人介绍</p>
@@ -38,7 +46,8 @@ export default function Home({ allPostsData }) {
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>
-                  {title}《{id}》
+                《{title}》
+                  {/* {id} */}
                 </a>
               </Link>
               <br />

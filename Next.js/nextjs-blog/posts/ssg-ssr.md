@@ -1,19 +1,109 @@
 ---
-title: '第一篇文章'
-date: '2020-01-02'
+title: '情侣之间要做的100件事'
+date: '2021-10-15'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+               
+                        已完成√()   未完成×()
+- 1、向对方表白     √
+- 2、叫他喜欢的昵称     √
+- 3、异地有时间要常见面(今年至少10次)(已完成8)
+- 4、异地每天要聊天，哪怕说一句话，不能空天。    √
+- 5、手牵手一起压马路       √
+- 6、一起走过大街小巷       √
+- 7、一起去看海，给对方拍好看的照片做情头       √
+- 8、见面累了为对方按摩
+- 9、异地累了打电话哄睡觉
+- 10、一起洗漱
+- 11、穿情侣装
+- 12、用情侣头像
+- 13、要有属于两个人的情侣物件，情侣鞋，情侣帽，情侣小饰品等等…
+- 14、穿情侣袜子
+- 15、一起听同一首歌曲
+- 16、一起看一次夕阳落山
+- 17、一起去外面玩，吃一顿好吃的
+- 18、一起染个头发
+- 19、一起搞卫生
+- 20、一起闭眼微笑
+- 21、 一起整理衣服
+- 22、 一人洗碗一人做饭
+- 23、一起旅游一次
+- 24、一起去吃一顿湘菜
+- 25、一起研究口红色号
+- 26、一起锻炼身体keep
+- 27、一起看书，分享自己喜欢的书籍
+- 28、一起看电影
+- 29、一起睡个懒觉
+- 30、一起去拍组写真
+- 31、一起玩真心话大冒险
+- 32、一起逛超市买好吃的
+- 33、一起逛街买好吃的
+- 34、一起去见双方父母，要提前了解父母喜好性格
+- 35、一起拍视频记录生活
+- 36、一起看夜景
+- 37、一起想未来的甜蜜生活
+- 38、一起敷面膜
+- 39、一起去一次对方没去过的地方体验新事物
+- 40、一起拍照洗照片贴房间,做个纪念相册保存照片
+- 41、一起看恐怖片
+- 42、一起去游乐场做摩天轮
+- 43、一起看星星
+- 44、一起去爬山
+- 45、一起打游戏
+- 46、一起坐公交车
+- 47、一起吃自助餐，签手进去，扶着出来
+- 48、一起吃顿烛光晚餐
+- 49、一起攒零花钱做任何事情都可以
+- 50、捏脸，一起傻笑，一起做鬼脸，一起哭，一起笑，一起面对所好的与不好的事
+- 51、做一件让对方感动的事情
+- 52、为对方挑选小皮筋
+- 53、为对方穿一次衣服
+- 54、为对方洗一次衣服 一起做饭 
+- 55、为对方写封信
+- 56、为女朋友买好多她爱的零食,为男生买一束花或者游戏皮肤或者其他
+- 57、为对方做一顿饭（要真实的点评好不好吃）
+- 58、互相给对方一个mua
+- 59、夸对方好看帅气等等
+- 60、为对方吹头发
+- 61、为对方做一次爱心便当
+- 62、为对方穿鞋
+- 63、为对方写封情书
+- 64、公主抱+猪八戒背媳妇~ 
+- 65、互穿对方的衣服拍照留恋
+- 66、给对方一个惊喜
+- 67、说自己的小秘密
+- 68、敞开心扉认认真真的聊一次（话题不限）
+- 69、节日要有仪式感,相互祝福  √
+- 70、发朋友圈对方炫耀喜欢的美照（如：这是我拍的哦！/这是我对象拍的/这是我对象）
+- 71、说说自己喜欢对方哪些优点
+- 72、去人多的地方要紧紧的牵住对方的手
+- 73、陪彼此过一次生日，为对方送上“宝贝生日快乐”的话
+- 74、偷偷给对方买喜欢又不舍得的东西
+- 75、给对方买一个他喜欢的东西（价格不超过500）
+- 76、早上醒来说句早安，晚上睡前说句晚安
+- 77、
+- 78、
+- 79、
+- 80、要记得纪念日跟双方生日 √(6-12,3-26,9-17)
+- 81、宝贝永远是宝贝独一无二，自己可以欺负，别人不行，要护短,给足对方安全感
+- 82、不能有朋友就冷落对象
+- 83、不能跟异性有暧昧关系
+- 84、
+- 85、
+- 86、
+- 87、
+- 88、
+- 89、
+- 90、
+- 91、
+- 92、
+- 93、
+- 94、
+- 95、
+- 96、
+- 97、
+- 98、。
+- 99、
+- 100、一起做以上所有事情。
 
-You can use Static Generation for many types of pages, including:
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
-
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
-
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.

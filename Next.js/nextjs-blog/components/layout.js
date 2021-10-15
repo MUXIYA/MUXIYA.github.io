@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
             <div className={styles.blogTitle}>
               <div className={styles.vertical}>
                 <h1 className={styles.HeaderTitle}>木兮呀</h1>
-                <h2>没有动态的日子都有在好好生活。</h2>
+                <h2>认真生活，就可以找到生活藏起来的糖果。</h2>
               </div>
             </div>
           </>
