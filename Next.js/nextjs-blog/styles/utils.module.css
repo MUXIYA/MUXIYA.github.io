@@ -20,36 +20,10 @@
   margin: 1rem 0;
 }
 
-.headingMd {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
 
-.borderCircle {
-  border-radius: 9999px;
-}
 
-.colorInherit {
-  color: inherit;
-}
 
-.padding1px {
-  padding-top: 1px;
-}
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.listItem {
-  margin: 0 0 1.25rem;
-}
-
-.lightText {
-  color: #999;
-}
 
 /* 主页部分样式 */
 
@@ -90,4 +64,56 @@
 .poem_info {
   font-size: 15px;
   margin: 15px auto;
+}
+.headingMd {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  display: -webkit-flex;
+}
+.colorInherit {
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  min-height: 1000px;
+  float: none;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.listItem {
+  max-width: 830px;
+  margin: 3.5rem auto;
+}
+.title_link{
+  font-size: 20px;
+  float: right;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px dashed #95a5a6;
+  box-sizing: border-box;
+  background-size: 35px 35px;
+  margin-top: 2.5rem;
+}
+.title_a{
+  background-color: rgba(0,0,0,0);
+  color: #7396a7;
+  font-family: "Open Sans","Microsoft Jhenghei","Microsoft Yahei",sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  transition: all .5s ease;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+.lightText {
+  color: #999;
+}
+.borderCircle {
+  border-radius: 9999px;
 }
