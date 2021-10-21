@@ -1,11 +1,11 @@
 ---
-title: '第二篇文章'
+title: '愿你付出甘之如饴，所得归于欢喜。'
 date: '2020-01-01'
+text: '初见是惊鸿一瞥，南柯一梦是你；等待是山重水复，怦然心动是你；相遇是柳暗花明，小心翼翼是你；重逢是始料未及，别来无恙是你。'
 ---
-
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
-
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+- **星河滚烫你是人间理想.** 
+- **皓月清凉你是人间曙光.** 
+- **人海冷漠你是人间炽热.** 
+- **万世浮沉你是人间归途.** 
+- **众人平庸你是人间星光.** 
+- **世事无常你是人间琳琅.** 

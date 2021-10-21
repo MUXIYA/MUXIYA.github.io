@@ -20,11 +20,6 @@
   margin: 1rem 0;
 }
 
-
-
-
-
-
 /* 主页部分样式 */
 
 .poem_wrap {
@@ -87,7 +82,7 @@
   max-width: 830px;
   margin: 3.5rem auto;
 }
-.title_link{
+.title_link {
   font-size: 20px;
   float: right;
   width: 100%;
@@ -97,19 +92,18 @@
   background-size: 35px 35px;
   margin-top: 2.5rem;
 }
-.title_a{
-  background-color: rgba(0,0,0,0);
+.title_a {
+  background-color: rgba(0, 0, 0, 0);
   color: #7396a7;
-  font-family: "Open Sans","Microsoft Jhenghei","Microsoft Yahei",sans-serif;
+  font-family: "Open Sans", "Microsoft Jhenghei", "Microsoft Yahei", sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
   font-weight: bold;
   letter-spacing: -1px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   word-wrap: break-word;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 
 .lightText {
   color: #999;
@@ -117,6 +111,26 @@
 .borderCircle {
   border-radius: 9999px;
 }
-.svg{
+.svg {
   font-size: 24px;
+}
+.text {
+  width: 100%;
+  clear: both;
+  padding: 10px 0;
+  color: #3a4145;
+  font-family: Merriweather, "Open Sans", "Microsoft Jhenghei",
+    "Microsoft Yahei", sans-serif;
+  font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
+  margin: 0;
+  font-size: 16px;
+  word-wrap: break-word;
+  display: block;
+  text-indent: 50px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  line-height: 1.5;
+  color: #7f8c93;
+  cursor: default;
 }

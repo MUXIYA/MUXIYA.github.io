@@ -6,12 +6,13 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), "posts");
 export function getSortedPostsData() {
-  // Get file names under /posts
+  // 获取posts下获取文件名
   const fileNames = fs.readdirSync(postsDirectory);
+
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
-
+    
     // Read markdown file as string
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");

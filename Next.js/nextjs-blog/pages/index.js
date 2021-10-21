@@ -6,6 +6,9 @@ import { getSortedPostsData } from "../lib/posts";
 import { createFromIconfontCN } from "@ant-design/icons";
 import Date from "../components/date";
 
+import { useRouter } from 'next/router'
+
+
 const MyIcon = createFromIconfontCN({
   scriptUrl: "//at.alicdn.com/t/font_2871124_r7l2yqxzuje.js", // 在 iconfont.cn 上生成
 });
@@ -19,6 +22,7 @@ export async function getStaticProps() {
   };
 }
 export default function Home({ allPostsData }) {
+  // console.log('allPostsData',allPostsData)
   return (
     <Layout home>
       <Head>
@@ -49,7 +53,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         {/* <h2 className={utilStyles.headingLg}>内容</h2> */}
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title,text }) => (
             <li className={utilStyles.listItem} key={id}>
               <div>
                 <MyIcon className={utilStyles.svg} type="icon-food-strawberry" />
@@ -57,8 +61,7 @@ export default function Home({ allPostsData }) {
                   <a className={utilStyles.title_a}>{title}</a>
                 </Link>
               </div>
-              <br />
-              <div>摘要</div>
+              <div className={utilStyles.text}>{text}</div>
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
