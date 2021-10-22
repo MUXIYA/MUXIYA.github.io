@@ -72,5 +72,11 @@
   }
   
   .backToHome {
-    margin: 3rem 0 0;
+    margin: 3.5rem auto;
+    max-width: 830px;
+    text-align: right;
+  }
+  .backToHome a{
+    color: #2daebf;
+    text-decoration: none;
   }

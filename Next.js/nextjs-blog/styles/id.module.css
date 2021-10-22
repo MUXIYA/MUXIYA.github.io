@@ -1,0 +1,29 @@
+.mainContent{
+    /* min-height: 1000px; */
+    max-width: 830px;
+    margin: 3.5rem auto;
+}
+.headingXl{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    border-bottom: 1px dashed #9eabb3;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #606975;
+    text-shadow: 0 3px 6px rgb(0 0 0 / 30%);
+    cursor: default;
+    
+}
+.md{
+    background-color: #f5f5f5;
+    font-family: Courier New !important;
+    font-size: 12px !important;
+    border: 1px solid #ccc;
+    padding: 5px;
+    overflow: auto;
+    margin: 5px 0;
+    color: #000;
+}
