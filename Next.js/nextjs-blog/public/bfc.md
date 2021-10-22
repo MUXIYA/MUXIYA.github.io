@@ -1,6 +1,7 @@
 ---
-title: 'BFC'
+title: '愿你我既可以朝九晚五、又可以浪迹天涯'
 date: '2020-10-22'
+text: '对钟爱的世界道一句晚安，日月星辰，山水风光。'
 ---
 
 **BFC全称：block formatting context，译为:"格式化上下文"**

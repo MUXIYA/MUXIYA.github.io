@@ -26,4 +26,5 @@
     overflow: auto;
     margin: 5px 0;
     color: #000;
+    min-height: 500px;
 }
